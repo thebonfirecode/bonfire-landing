@@ -8,11 +8,12 @@ export default function Home() {
           Sitio en construcción.
         </p>
         <Image
-          src="/build-svgrepo-com.svg"
+          src="/images/h600-2-bonfirelogowithtext.png"
           alt="Vercel Logo"
           className="white"
-          width={50}
-          height={24}
+          width={500}
+          height={600}
+          quality={100}
           priority
         />
       </div>
