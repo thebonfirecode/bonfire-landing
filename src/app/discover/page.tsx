@@ -1,13 +1,11 @@
 import Image from "next/image";
-import MotionWrapper from "./components/MotionWrapper";
 
-export default function Home() {
+export default function Discover() {
   return (
-    <MotionWrapper>
     <main className="flex min-h-screen flex-col items-center p-24">
       <div className="w-full max-w-5xl flex-col items-center font-mono text-sm lg:flex">
         <p className="top-20 mb-10 flex w-full justify-center">
-          Sitio en construcción.
+          Sitio en construcción !.
         </p>
         <Image
           src="/images/h600-2-bonfirelogowithtext.png"
@@ -20,6 +18,5 @@ export default function Home() {
         />
       </div>
     </main>
-    </MotionWrapper>
   );
 }
