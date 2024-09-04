@@ -10,7 +10,7 @@ export default function Home() {
           Sitio en construcción.
         </p>
         <Image
-          src="/images/h600-2-bonfirelogowithtext.png"
+          src="/images/bonfirelogofulltext-white-square.svg"
           alt="Vercel Logo"
           className="white"
           width={500}
