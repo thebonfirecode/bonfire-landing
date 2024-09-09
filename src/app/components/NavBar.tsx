@@ -2,23 +2,31 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-export default function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ['rgba(0, 0, 0, 0)', 'rgba(48, 56, 65, 0.3)']
+  );
+  
 
   return (
-    <nav className=" bg-opacity-30 bg-main-black fixed w-full top-0 backdrop-blur-md z-50">
+    <motion.nav style={{backgroundColor}} className={` bg-main-black backdrop-blur-sm fixed w-full top-0 z-50`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
+              <Link href="/" className="text-gray-300 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
                 <Image
                   src="/images/bonfirelogo.svg"
                   alt="Vercel Logo"
                   className="white"
-                  width={60}
-                  height={70}
+                  width={50}
+                  height={60}
                   quality={30}
                   priority
                 />
@@ -123,6 +131,8 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
-}
+};
+
+export default Navbar
