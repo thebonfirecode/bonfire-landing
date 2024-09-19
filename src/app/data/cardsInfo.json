@@ -1,0 +1,32 @@
+[
+  {
+    "imgPath": "/images/service.svg",
+    "title": "Consultoría",
+    "description": "Asesoramiento en cada etapa del proceso tecnológico desde la planificación hasta la ejecución para alcanzar tus objetivos"
+  },
+  {
+    "imgPath": "/images/rocket.svg",
+    "title": "Transformación Digital",
+    "description": "Acelera el crecimiento de tu negocio mediante la implementación de herramientas digitales innovadoras y escalables"
+  },
+  {
+    "imgPath": "/images/code.svg",
+    "title": "Desarrollo de Software a Medida",
+    "description": "Creamos aplicaciones y sistemas personalizados que se ajustan a tus requerimientos"
+  },
+  {
+    "imgPath": "/images/bling.svg",
+    "title": "Diseño de UI/UX",
+    "description": "Transformamos tu interfaz actual en una experiencia intuitiva y moderna, mejorando la experiencia del usuario"
+  },
+  {
+    "imgPath": "/images/tool.svg",
+    "title": "Soporte Técnico Especializado",
+    "description": "Asistencia técnica y soporte en tiempo real para asegurar la disponibilidad de tus sistemas"
+  },
+  {
+    "imgPath": "/images/plugin.svg",
+    "title": "Capacitación y Desarrollo",
+    "description": "Potencia las habilidades de tu equipo con capacitación especializada en las herramientas y tecnologías más actuales"
+  }
+]
