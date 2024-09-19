@@ -13,6 +13,9 @@ const config: Config = {
         'main-orange': '#FF5B1E',
         'main-black' : '#303841',
       },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -1,40 +1,23 @@
-import Image from "next/image";
+import { FC } from 'react';
+
 
 interface Props {
-  imgPath: string;
-  imgWidth: number;
-  imgHeight: number;
+  SvgIcon: FC<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   link?: string;
 }
 
 export default function GenericCards({
-  imgPath,
-  imgWidth,
-  imgHeight,
+  SvgIcon,
   title,
-  description,
-  link
+  description
 }: Props) {
   return (
-    <div className="max-w-sm p-6 bg-[#eff0ef] rounded-lg shadow mx-3 hover:bg-main-orange text-main-black hover:text-white">
-      <Image
-        src={imgPath}
-        alt="logo"
-        width={imgWidth}
-        height={imgHeight}
-        priority
-      />
-      <p className="mb-2 text-2xl font-semibold tracking-tight">
-        {title}
-      </p>
-      <p className="mb-3 font-normal">
-        {description}
-      </p>
-      <p className="inline-flex font-bold items-center">
-        {link}
-      </p>
+    <div className="p-8 bg-[#eff0ef] rounded-lg shadow hover:bg-main-orange text-main-black hover:text-white w-full group transition-colors duration-500 hover:scale-105">
+      <SvgIcon className="text-main-orange group-hover:text-white w-14 h-14"/>
+      <p className="mt-4 mb-2 text-xl font-bold tracking-tight">{title}</p>
+      <p className="mb-3 text-sm font-normal">{description}</p>
     </div>
   );
 }
