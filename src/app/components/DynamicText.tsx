@@ -3,7 +3,7 @@ interface Props {
     style: string
 }
 
-export default function DinamicText({ description, style }: Props) {
+export default function DynamicText({ description, style }: Props) {
   return (
     <div>
         <p className={style}>{description}</p>

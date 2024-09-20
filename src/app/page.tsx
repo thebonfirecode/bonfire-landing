@@ -1,5 +1,5 @@
 import Video from "./components/Video";
-import DinamicText from "./components/DinamicText";
+import DynamicText from "./components/DynamicText";
 import GenericCards from "./components/GenericCards";
 import cardsInfo from "../app/data/cardsInfo.json";
 import SvgComponents from "./components/SvgComponents";
@@ -11,26 +11,26 @@ export default function Home() {
       <div className="static">
         <Video videoSource={"assets/88968-608446385_medium.mp4"}></Video>
         <div className="absolute top-1/4 left-14">
-          <DinamicText
+          <DynamicText
             description="TECNOLOGÍA A TU MEDIDA"
             style="font-extrabold text-5xl w-52 mb-6 tracking-widest leading-loose"
           />
-          <DinamicText
+          <DynamicText
             description="Impulsá tu negocio con soluciones IT eficientes e integradas para transformar tu empresa simplificando operaciones y mejorando la productividad con un enfoque práctico, resultados medibles y soporte continuo de la mano de nuestros expertos"
             style="w-2/4 font-base tracking-widest leading-loose"
           />
         </div>
         <div className="mx-20 mt-12">
-          <DinamicText
+          <DynamicText
             description="NUESTROS SERVICIOS"
             style="text-main-orange font-extrabold text-lg mb-2 tracking-widest leading-loose"
           />
-          <DinamicText
+          <DynamicText
             description="Qué ofrecemos?"
             style="text-main-black font-extrabold text-4xl mb-2 tracking-widest leading-loose"
           />
           <div className="max-w-[600px]">
-            <DinamicText
+            <DynamicText
               description="Impulsa tu negocio con nuestro enfoque integral: desde asesoramiento estratégico y herramientas digitales innovadoras hasta desarrollo personalizado y soporte técnico de alta calidad"
               style="text-main-black font-base text-md mb-6"
             />
