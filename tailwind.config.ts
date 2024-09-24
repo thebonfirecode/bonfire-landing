@@ -13,8 +13,11 @@ const config: Config = {
         'main-orange': '#FF5B1E',
         'main-black' : '#303841',
       },
+      textShadow: {
+        'outline' : '1px -1px 0 rgba(250, 249, 246, 1), 1px -1px 0 rgba(250, 249, 246, 1), -1px 1px 0 rgba(250, 249, 246, 1), 1px 1px 0 rgba(250, 249, 246, 1) '
+      },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Poppins','Urbanist', 'Roboto', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -25,10 +28,34 @@ const config: Config = {
         glow: [
           "0 0px 10px rgba(250, 249, 246, 1)",
           "0 0px 15px rgba(250, 249, 246, 1)"
+        ],
+        textstrokeshadow: [
+          "1px -1px 0 rgba(250, 249, 246, 1)",
+          "1px -1px 0 rgba(250, 249, 246, 1)", 
+          "-1px 1px 0 rgba(250, 249, 246, 1)", 
+          "1px 1px 0 rgba(250, 249, 246, 1)" 
         ]
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }:any) {
+      const newUtilities = {
+        '.text-stroke-1': {
+          '-webkit-text-stroke-width': '1px',
+        },
+        '.text-stroke-2': {
+          '-webkit-text-stroke-width': '2px',
+        },
+        '.stroke-white': {
+          '-webkit-text-stroke-color': '#ffffff',
+        },
+        '.stroke-black': {
+          '-webkit-text-stroke-color': '#000000',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 };
 export default config;
