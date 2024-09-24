@@ -1,11 +1,12 @@
 interface Props {
-  videoSource: string
+  videoSource: string,
+  style: string
 }
 
-const Video = ({videoSource} : Props) => {
+const Video = ({videoSource, style} : Props) => {
 
   return(
-    <video width={"100%"} height={"50%"} autoPlay loop muted preload="none" playsInline>
+    <video width={"100%"} height={"50%"} autoPlay loop muted preload="none" playsInline className={style}>
       <source src={videoSource} type={"video/mp4"} />
       Your browser does not support the video tag.
     </video>

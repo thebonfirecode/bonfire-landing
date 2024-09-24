@@ -42,23 +42,23 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/">
-                  <p className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
-                    Home
+                  <p className="text-gray-300 px-3 py-2 rounded-md text-md font-bold hover:text-off-white ">
+                    HOME
                   </p>
                 </Link>
                 <Link href="/about">
-                  <p className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
-                    About
+                  <p className="text-gray-300 px-3 py-2 rounded-md text-md font-bold hover:text-off-white">
+                    ABOUT
                   </p>
                 </Link>
                 <Link href="/services">
-                  <p className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
-                    Services
+                  <p className="text-gray-300 px-3 py-2 rounded-md text-md font-bold hover:text-off-white">
+                    SERVICES
                   </p>
                 </Link>
                 <Link href="/contact">
-                  <p className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
-                    Contact
+                  <p className="text-gray-300 px-3 py-2 rounded-md text-md font-bold hover:text-off-white">
+                    CONTACT
                   </p>
                 </Link>
               </div>
@@ -97,23 +97,23 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-8 sm:px-3">
               <Link href="/">
-                <p className="text-gray-300 hover:text-off-white hover:drop-shadow-glow block px-3 py-2 rounded-md text-base font-medium">
-                  Home
+                <p className="text-main-orange hover:text-off-white block px-3 py-2 rounded-md text-xl font-bold">
+                  HOME
                 </p>
               </Link>
               <Link href="/about">
-                <p className="text-gray-300 hover:text-off-white hover:drop-shadow-glow block px-3 py-2 rounded-md text-base font-medium">
-                  About
+                <p className="text-main-orange hover:text-off-white block px-3 py-2 rounded-md text-xl font-bold">
+                  ABOUT
                 </p>
               </Link>
               <Link href="/services">
-                <p className="text-gray-300 hover:text-off-white hover:drop-shadow-glow block px-3 py-2 rounded-md text-base font-medium">
-                  Services
+                <p className="text-main-orange hover:text-off-white block px-3 py-2 rounded-md text-xl font-bold">
+                  SERVICES
                 </p>
               </Link>
               <Link href="/contact">
-                <p className="text-gray-300 hover:text-off-white hover:drop-shadow-glow block px-3 py-2 rounded-md text-base font-medium">
-                  Contact
+                <p className="text-main-orange  hover:text-off-white block px-3 py-2 rounded-md text-xl font-bold">
+                  CONTACT
                 </p>
               </Link>
             </div>

@@ -7,19 +7,22 @@ import Banner from "./components/Banner";
 
 export default function Home() {
   return (
-    <div>
-      <div className="fixed top-0 left-0 w-full h-full -z-10">
-        <Video videoSource={"assets/88968-608446385_medium.mp4"}></Video>
+    <div className="relative w-full">
+      <div className="fixed top-0 left-0 w-full h-full min-h-screen -z-10 bg-black">
+        <Video videoSource={"assets/88968-608446385_medium.mp4"} style={"h-full object-cover "}></Video>
       </div>
-      <div className="fixed top-20 left-20 z-0">
+      <div className="fixed top-24 left-4 md:top-24 md:left-20 z-0">
           <DynamicText
             description="TECNOLOGÍA A TU MEDIDA"
-            style=" text-transparent text-stroke-1 stroke-white font-extrabold text-5xl md:w-52 md:mb-6 tracking-widest leading-loose"
+            style=" text-transparent text-stroke-2 text-4xl stroke-white font-extrabold md:text-6xl xl:text-8xl md:w-52 md:mb-6 tracking-widest leading-loose"
           />
           <DynamicText
             description="Impulsá tu negocio con soluciones IT eficientes e integradas para transformar tu empresa simplificando operaciones y mejorando la productividad con un enfoque práctico, resultados medibles y soporte continuo de la mano de nuestros expertos"
-            style="w-2/4 font-base tracking-widest leading-loose"
+            style="text-sm md:text-xl w-full pr-16 md:w-3/4 font-base tracking-widest leading-loose"
           />
+        </div>
+        <div>
+          
         </div>
         <div className="relative w-full mt-[500px] sm:mt-[600px] lg:mt-[700px] bg-off-white">
           <div className=" mx-20 mt-12">
