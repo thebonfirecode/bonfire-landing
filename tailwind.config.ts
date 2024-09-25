@@ -53,6 +53,9 @@ const config: Config = {
         '.stroke-black': {
           '-webkit-text-stroke-color': '#000000',
         },
+        '.stroke-orange': {
+          '-webkit-text-stroke-color': '#FF5B1E',
+          },
       }
       addUtilities(newUtilities)
     }
