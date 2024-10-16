@@ -27,14 +27,21 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-gray-300 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
+              <Link href="/" className=" flex items-center text-gray-300 py-2 rounded-md text-sm font-medium hover:text-off-white hover:drop-shadow-glow ease-in-out duration-300">
                 <Image
                   src="/images/bonfirelogo.svg"
-                  alt="Vercel Logo"
+                  alt="Bonfire Code Logo"
                   className="white"
                   width={50}
                   height={60}
-                  quality={30}
+                  priority
+                />
+                <Image
+                  src="/images/bonfiretextonly-white.png"
+                  alt="Bonfire Code Name"
+                  width={120}
+                  height={100}
+                  quality={100}
                   priority
                 />
               </Link>

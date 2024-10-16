@@ -24,8 +24,8 @@ export default function Home() {
         <div>
           
         </div>
-        <div className="relative w-full mt-[600px] sm:mt-[700px] bg-off-white">
-          <div className=" mx-20 mt-12">
+        <div className="relative w-full mt-[600px] sm:mt-[700px] sm:h-92 bg-off-white pb-20">
+          <div className=" mx-10 sm:mx-20 mt-12">
             <DynamicText
               description="NUESTROS SERVICIOS"
               style="text-main-orange font-extrabold text-lg mb-2 tracking-widest leading-loose"
