@@ -8,10 +8,10 @@ import Banner from "./components/Banner";
 export default function Home() {
   return (
     <div className="relative w-full">
-      <div className="fixed top-0 left-0 w-full h-full min-h-screen -z-10 bg-black">
+      <div className="fixed top-0 left-0 w-full h-full min-h-screen -z-20 bg-black">
         <Video videoSource={"assets/88968-608446385_medium.mp4"} style={"h-full object-cover "}></Video>
       </div>
-      <div className="fixed top-24 left-4 sm:top-24 sm:left-20 z-0">
+      <div className="fixed top-24 left-4 sm:top-24 sm:left-20 -z-10">
           <DynamicText
             description="TECNOLOGÍA A TU MEDIDA"
             style=" text-transparent text-stroke-2 text-4xl stroke-white font-extrabold sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl sm:w-52 sm:mb-20 md:mb-12 tracking-widest leading-loose"
@@ -24,7 +24,7 @@ export default function Home() {
         <div>
           
         </div>
-        <div className="relative w-full mt-[600px] sm:mt-[700px] sm:h-92 bg-off-white pb-20">
+        <div className="relative w-full mt-[600px] sm:mt-[700px] sm:h-92 bg-off-white dark:bg-main-black transition-colors duration-300 pt-2 pb-20">
           <div className=" mx-10 sm:mx-20 mt-12">
             <DynamicText
               description="NUESTROS SERVICIOS"
@@ -32,12 +32,12 @@ export default function Home() {
             />
             <DynamicText
               description="Qué ofrecemos?"
-              style="text-main-black font-extrabold text-4xl mb-2 tracking-widest leading-loose"
+              style="text-main-black dark:text-off-white font-extrabold text-4xl  mb-2 tracking-widest leading-loose"
             />
             <div className="max-w-[600px]">
               <DynamicText
                 description="Impulsa tu negocio con nuestro enfoque integral: desde asesoramiento estratégico y herramientas digitales innovadoras hasta desarrollo personalizado y soporte técnico de alta calidad"
-                style="text-main-black font-base text-md mb-6"
+                style="text-main-black dark:text-off-white font-base text-md mb-6"
               />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
@@ -55,10 +55,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full h-auto mt-12 mb-44">
+        <div className="w-full h-auto mb-44 bg-off-white dark:bg-main-black transition-colors duration-300">
             <Banner
-              imgSrc="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzFzeW5jcXBjcXE5ZmJodjZibWZmeGw3dWJxeWZ5OXgzYjNsNGtmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/joVdaoY8dJ70Ai8pSD/giphy.gif"
-              title="Go Digital"
+              imgSrc="/assets/giphy-ezgif.com-gif-maker.gif"
+              title="CAMBIA A DIGITAL"
               description="En nuestra hoguera tecnológica, te acompañamos con estrategias robustas y creativas para que siempre sientas la tranquilidad de estar en las mejores manos"
             />
         </div>

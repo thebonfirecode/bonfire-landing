@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,6 +72,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+      <ThemeToggleButton/>
+
           <div className="-mr-2 flex md:hidden">
             <div className="relative w-10 h-8">
               <label
